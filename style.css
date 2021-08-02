@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    background:#082032;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80vw;
+  height: 70vh;
+  background:#2940D3;
+  border-radius: 5px;
+  font-family:  'Great Vibes', cursive;
+  overflow: hidden;
+  color:gray;
+  letter-spacing: 0.5px;
+  display: grid;
+  place-items: center;
+}
+.inner{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 1;
+    transition: 1s;
+}
+
+.box{
+    position: absolute;
+   top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+}
+
+.number::before{
+    content: "";
+    position: absolute;
+   top: -130px;
+   right: -30px;
+   width: 90px;
+   height: 200px;
+   background: #0A1931;
+   transform: rotate(-45deg);
+   z-index: -1;
+   box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.5);
+   
+}
+.number{
+    font-family:  'Great Vibes', cursive;
+    position: absolute;
+    margin: 0;
+    top: 15px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+.number img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -25px;
+    top: -7px;
+    cursor: pointer;
+    animation: rot 1s linear;
+}
+.number:hover img{
+    animation: rot 1s linear;
+}
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.text{
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    font-size: 1.3rem;
+}
+.author{
+    position: absolute;
+    height: 50px;
+    top: 76%;
+    left: -5%;
+    transform: translate(50%,50%);
+    width: 80%;
+    font-size: 1rem;
+    font-family: 'Gruppo', cursive;
+
+   
+}
+button{
+    display: block;
+    margin: 160px auto;
+    width: 185px;
+    padding: 15px;
+    background-color: cyan;
+    color: #151965;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+button:hover{
+    background-color:#0CECDD;
+    color: #151965;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
